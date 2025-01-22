@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome kaohsiung fruit stand</title>
+    <style>
+        img{
+            width: 25%;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <img src="images/fruit/guava.jpg" onclick="alert('芭樂賀呷')">
+
+        <img src="images/fruit/banana.jpg" 
+        onclick="fruit('香蕉')" 
+        onmouseover="mystyle(this)" 
+        onmouseout="yourstyle(this)">
+
+        <img src="images/fruit/longan.jpg" onclick="fruit('龍眼')">
+    </div>
+
+    <div>
+        <table border="1">
+            <tr>
+                <td>Apple</td>
+                <td>
+                    <img src="images/fruit/apple.jpg" style="width: 5%;" >
+                </td>
+            </tr>
+
+            <tr>
+                <td>芭樂</td>
+                <td><img src="images/fruit/guava.jpg" style="width: 5%;" ></td>
+            </tr>
+
+            <tr>
+                <td>西瓜</td>
+                <td><img src="images/fruit/watermelon.jpg" style="width: 5%;" ></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function fruit(name){
+            alert(name + "賀呷");
+        }
+
+        function mystyle(obj){
+            obj.style.backgroundColor='tomato';
+            obj.style.cursor='pointer'
+        }
+
+        function yourstyle(obj){
+            obj.style.backgroundColor='inherit';           
+        }
+
+        
+    </script>
+</body>
+</html>
